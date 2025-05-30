@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Bella Pizza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fffdf9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #e63946, #f77f00);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background-color: #fcbf49;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      margin: 0 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e63946;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1601924579407-d3a8e88ca8a0') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #e63946;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .menu-item {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.03);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .menu-item h4 {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .contact {
+      text-align: center;
+      line-height: 2;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>La Bella Pizza</h1>
+    <p>Wood-fired. Fresh. Delicious.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Love at First Slice 🍕</h2>
+  </section>
+
+  <section class="section" id="menu">
+    <h3>Our Menu</h3>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1548365328-9f849b112d46" alt="Margherita Pizza">
+        <h4>Margherita - $9</h4>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1601924579407-d3a8e88ca8a0" alt="Pepperoni Pizza">
+        <h4>Pepperoni - $11</h4>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1594007654729-407eedc4e3d2" alt="BBQ Chicken Pizza">
+        <h4>BBQ Chicken - $12</h4>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1594007654946-ff3f7a8e5b3d" alt="Veggie Pizza">
+        <h4>Veggie Delight - $10</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <div class="contact">
+      <p>Email: hello@labellapizza.com</p>
+      <p>Phone: +123 456 7890</p>
+      <p>Location: 123 Pizza Street, Flavor Town</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 La Bella Pizza. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
